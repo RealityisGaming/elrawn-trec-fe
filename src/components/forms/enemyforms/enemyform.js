@@ -28,7 +28,7 @@ export default class EnemyForm extends Component {
     } 
     handleSubmit(event) {
         event.preventDefault()
-        axios.post('http://localhost:5000/enemy', {
+        axios.post('https://elrawn-trec-fe.herokuapp.com/enemy', {
             method: "POST",
             credentials: 'same-origin',
             Header: {

@@ -26,7 +26,7 @@ export default class CharacterSheet extends Component {
     }
 
     handleDelete(id) {
-        axios.delete(`http://localhost:5000/character/${id}`)
+        axios.delete(`https://elrawn-trec-fe.herokuapp.com/character/${id}`)
         .then(response => {
             this.setState({
                 characters: this.state.characters.filter(character => {
@@ -41,7 +41,7 @@ export default class CharacterSheet extends Component {
     }
 
     charactersAPICall() {
-        axios.get('http://localhost:5000/characters')
+        axios.get('https://elrawn-trec-fe.herokuapp.com/characters')
         .then(response => {
             console.log(response.data);
             this.setState({

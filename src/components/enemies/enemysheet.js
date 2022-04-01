@@ -27,7 +27,7 @@ export default class EnemySheet extends Component {
     }
 
     handleDelete(id) {
-        axios.delete(`http://localhost:5000/enemy/${id}`)
+        axios.delete(`https://elrawn-trec-fe.herokuapp.com/enemy/${id}`)
         .then(response => {
             this.setState({
                 enemies: this.state.enemies.filter(enemy => {
@@ -42,7 +42,7 @@ export default class EnemySheet extends Component {
     }
 
     enemiesAPICall() {
-        axios.get('http://localhost:5000/enemy')
+        axios.get('https://elrawn-trec-fe.herokuapp.com/enemy')
         .then(response => {
             console.log(response.data);
             this.setState({

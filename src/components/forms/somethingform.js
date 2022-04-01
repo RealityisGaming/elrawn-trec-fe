@@ -32,7 +32,7 @@ export default class CharacterForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault()
-        axios.post('http://localhost:5000/character', {
+        axios.post('https://elrawn-trec-fe.herokuapp.com/character', {
             method: "POST",
             credentials: 'same-origin',
             Header: {
