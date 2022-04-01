@@ -51,7 +51,7 @@ export default class CharacterSheet extends Component {
             console.log(error);
         })
     }
-
+// a
     handleMap() {
         return this.state.characters.map(character => {
             return <CharacterItem key = {character.id} character={character} handleDelete={this.handleDelete}/>
